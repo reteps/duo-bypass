@@ -3,7 +3,6 @@ import type { UserConfig } from 'vite';
 const pkg = require('./package.json');
 
 const config: UserConfig = {
-	base: "/duo-bypass/",
 	plugins: [sveltekit()],
   ssr: {
     noExternal: Object.keys(pkg.dependencies || {})

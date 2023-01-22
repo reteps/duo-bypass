@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths'
   import { QRious } from '@phippsytech/svelte-qrious'
   // const { QRious } = pkg;
   import base32Encode from 'base32-encode'
@@ -64,7 +65,7 @@
 <div class="flex flex-col lg:ml-0 ml-5">
   <h1 class="text-3xl">DuoBypass</h1>
   <p>This site allows you to use Duo codes with Google Authenticator instead of in the Duo App.</p>
-  <p>Visit the <a href="/setup" class="text-blue-700 hover:text-purple-700">setup</a> to get started. View the <a href="https://github.com/reteps/duo-bypass" class="text-blue-700 hover:text-purple-700">Source Code</a>.</p>
+  <p>Visit the <a href="{base}/setup" class="text-blue-700 hover:text-purple-700">setup</a> to get started. View the <a href="https://github.com/reteps/duo-bypass" class="text-blue-700 hover:text-purple-700">Source Code</a>.</p>
   <div class="flex flex-col items-center mt-10 lg:mx-0 mx-10">
     <div class="lg:w-1/2 w-full border-gray-500 border-2 rounded-lg">
       <div class="p-5 flex flex-col">
